@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  /* background: #a595ff; */
+  /* background-image: url("pulau-padar.jpg"); */
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  /* border: 2px solid black; */
+  background-color: rgb(238, 238, 238);
+}
+#hey:hover{
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+#navbaratas{
+  background-color:rgb(5, 5, 5);
+}
+::selection{
+  color: #fff;
+  background: #664AFF;
+}
+.bg-tambah{
+  top: 0; 
+  margin: 0% 0%; 
+  width: 100%; 
+  height: 5rem; 
+  position: relative;
+}
+
+.wrapper{
+  max-width: 450px;
+  margin: 50px auto;
+}
+
+.wrapper .search-input{
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+#card-produk{
+  background-image: url(Assets/sub/bg-1-2.png);
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #207a9e;
+  cursor: pointer;
+}
+.checked {
+  color: orange;
+}
+
+.inner {
+  height: 15rem;
+  overflow: hidden;
+}
+
+.inner img {
+  transition: all 1.5s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.2);
+}
+
+#myBtnContainer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.btn2 {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+
+
+.btn2.active {
+  /* color: rgb(182, 133, 133); */
+  color: rgb(255, 255, 255);
+}
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  overflow: hidden;
+}
+#isi-menu {
+  list-style: none;
+}
+.card-img-top {
+  width: 125%;
+}
+.deskripsi {
+  overflow-y: scroll; 
+  scrollbar-width: none; 
+  height: 120px; 
+  margin-top: 10px;
+}
+/* footerr */
+.social-icons{
+  transform: translateY(-10px);
+}
+
+a {
+	color: #fff
+}
+  
+  a:hover {
+	color: #fff
+}
+  
+  .box {
+	margin-bottom: 60px;
+	margin-top: 20px
+}
+  
+  .form-control {
+	border: none;
+	margin-left: 0;
+	background-color: #000000;
+	color: #fff
+}
+  
+  input {
+	border-bottom: 1px solid #fff !important;
+	border-radius: 0 !important
+}
+  
+  ::-webkit-input-placeholder {
+	color: #E1F5FE !important
+}
+  
+  ::-moz-placeholder {
+	color: #E1F5FE !important
+}
+  
+  :-ms-input-placeholder {
+	color: #E1F5FE !important
+}
+  
+  :-moz-placeholder {
+	color: #E1F5FE !important
+}
+::placeholder{
+  color:rgb(116, 116, 116) !important;
+  opacity: 1; /* Firefox */
+
+}
+  .form-head {
+	padding-left: 10px;
+	padding-right: 12px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 22px
+}
+  
+  .custom-control-label {
+	font-size: 14px !important
+}
+  
+  .get-input {
+	padding-left: 0
+}
+  
+  .btn .z {
+	color: #ffffff !important;
+	font-weight: bold !important;
+	padding: 10px 20px 10px 20px !important;
+	border-radius: 0 !important
+}
+
+#kategori-id{
+  margin-top: -30px;
+}
+
+section.pricing {
+  background: #000000;
+  background: linear-gradient(to right, #379dc5, #125e7c);
+}
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+}

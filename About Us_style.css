@@ -1,0 +1,240 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+	font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}   
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.carousel-item{
+	height:32rem;
+	background:#777;
+	color:white;
+	position: relative;
+}
+
+.container{
+	bottom:0;
+	left:0;
+	right:0;
+
+
+}
+#half-page-id{
+	padding-bottom:50px;
+}
+/* container-main */
+
+.container-main {
+	padding: 20vmin 0;
+}
+
+.container-main .row .col-md-6 .pray img {
+	opacity: 0.8;
+	width: 85%;
+	border-radius: 0.2em;
+}
+
+.container-main .row .col-md-6:last-child {
+	position: relative;
+}
+
+.container-main .row .col-md-6 .panel {
+	position: absolute;
+	top: 7vmin;
+	left: -18vmin;
+	background: white;
+	border-radius: 3px;
+	text-align: left;
+	padding: 13vmin 5vmin 20vmin;
+	box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+	font-family: var(--Rubik);
+	z-index: 1;
+}
+
+.container-main .row .col-md-6 .panel p {
+	font-size: 0.9em;
+	color: rgba(0, 0, 0, 0.5)
+}
+
+.container-main .row .col-md-6 .panel h1 {
+	font-weight: bold;
+	padding: 0.4em 0;
+	font-size: 2em;
+}
+
+/*team*/
+
+.container-12{
+	text-align: center;
+	background: #f5f5f5;
+}
+
+.header{
+	padding-top:60px;
+	color:#444;
+	font-size:20px;
+	margin:auto;
+	line-height: 50px;
+}
+
+.sub-container{
+	max-width: 1200px;
+	margin:auto;
+	padding:48px 0;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.teams{
+	margin: 10px;
+	padding:22px;
+	max-width:30%;
+	cursor:pointer;
+	transition: 0.4s;
+	box-sizing:border-box;
+}
+
+.teams:hover{
+	background: #ddd;
+	border: 12px;
+	transform: translateY(-5%);
+}
+
+.teams img{
+	widows: 200px;
+	height:200px;
+}
+
+.name{
+	padding:12px;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.desig{
+	font-style: italic;
+	color:#888;
+}
+
+.about{
+	margin:20px 0;
+	font-weight: lighter;
+	color:#4e4e4e;
+}
+
+.social-links{
+	margin:14px;
+}
+
+.social-links a{
+	display:inline-block;
+	height:30px;
+	width:30px;
+	transition: .4s;
+}
+.social-links as :hover{
+	transform: scale(1.5);
+}
+.social-links a i{
+	color:#444;
+}
+
+@media screen and (max-width:600px){
+	.teams{
+		max-width: 100%;
+	}
+}
+
+#hey:hover{
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+/* footerr */
+.social-icons{
+  transform: translateY(-10px);
+}
+
+a {
+	color: #fff
+  }
+  
+  a:hover {
+	color: #fff
+  }
+  
+  .box {
+	margin-bottom: 60px;
+	margin-top: 20px
+  }
+  
+  .form-control {
+	border: none;
+	margin-left: 0;
+	background-color: #1565C0;
+	color: #fff
+  }
+  
+  input {
+	border-bottom: 1px solid #fff !important;
+	border-radius: 0 !important
+  }
+  
+  ::-webkit-input-placeholder {
+	color: #E1F5FE !important
+  }
+  
+  ::-moz-placeholder {
+	color: #E1F5FE !important
+  }
+  
+  :-ms-input-placeholder {
+	color: #E1F5FE !important
+  }
+  
+  :-moz-placeholder {
+	color: #E1F5FE !important
+  }
+  
+  .form-head {
+	padding-left: 10px;
+	padding-right: 12px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 22px
+  }
+  
+  .custom-control-label {
+	font-size: 14px !important
+  }
+  
+  .get-input {
+	padding-left: 0
+  }
+  
+  .btn .z {
+	color: #ffffff !important;
+	font-weight: bold !important;
+	padding: 10px 20px 10px 20px !important;
+	border-radius: 0 !important
+  }
+  
+  button:hover {
+	color: #1565C0 !important;
+	background-color: #fff
+  }
+
+#our-team{
+	padding-top: 135px;
+    margin-top: -135px;
+}
