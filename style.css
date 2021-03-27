@@ -1,0 +1,319 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    margin: 0px;
+    padding: 0px;
+	  font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}   
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.carousel-caption{
+    top: 40%;
+    bottom: 50%;
+    transform: translateY(-50%, -50%);
+}
+/* Typewritter */
+.line-1{
+    position: relative;
+    top: 50%;  
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 21em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+#cap3caro{
+    transform: translateX(5%);
+    text-align: left;
+	top: 41%;
+}
+#cap1caro{
+	top: 42%;
+}
+#hey:hover{
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.cardz {
+  padding: 50px;
+  background-color: #1565C0;
+  color: #fff
+}
+
+/* ------------------------------------- Virtual tour--------------------------------------------------- */
+.vt-head{
+	text-align: center;
+	text-shadow: 1px 1px 40px rgba(0,0,0,0.2);
+}
+.vt-p{
+	text-align: center;
+	text-shadow: 1px 1px 40px rgba(0,0,0,0.2);
+}
+/* ------------------------------------- Galeri --------------------------------------------------- */
+
+.rowz {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .columnz {
+	flex: 25%;
+	max-width: 33.3%;
+	padding: 0 4px;
+  }
+  
+  .columnz img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	filter: grayscale(1) brightness(0.5);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s linear;
+  }
+  .columnz img:hover {
+	filter: grayscale(0);
+	transform: translateY(-2%);
+  }
+  
+/* ------------------------------------------CLIENT---------------------------------------------------------- */
+#client{
+	width:100%;
+	border-top: 1px solid rgba(58,58,58,0.03);
+	border-bottom: 1px solid rgba(58,58,58,0.03);
+	padding: 50px 0px;
+	background-image: url("Assets/sub/bg.png");
+	background-position: center;
+	background-size: 1000px;
+}
+.client-heading{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.c-box-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin:20px 0px;
+}
+.client-box {
+	width:310px;
+	height: 350px;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+	margin: 20px;
+	box-shadow: 5px 10px 30px rgba(0,0,0,0.08);
+}
+.client-box img{
+	width:90px;
+	height: 90px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.client-box strong{
+	color:#1c3548;
+	margin:0px;
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-top:10px;
+}
+.star{
+  display: flex;
+	margin: 10px 0px 10px 0px;
+}
+.star i{
+	color:#ff9529;
+}
+.client-box p{
+	color:#747474;
+	font-size: 0.9rem;
+	margin:0px;
+	text-align: center;
+	display: block;
+	display: -webkit-box;
+	max-width: 80%;
+	-webkit-line-clamp:4;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.client-box a{
+	width:190px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#FFFFFF;
+	background-color: #0e8f77;
+	border-radius: 20px;
+	box-shadow: 4px 10px 30px rgba(24,139,119,0.2);
+}
+.client-box a{
+	width:140px;
+	margin-top: 20px;
+	border-radius: 0px;
+}
+.client-box:hover{
+	transform: translateY(-17px);
+	box-shadow: 5px 10px 30px rgba(0,0,0,0.12);
+  	background-color: rgb(228, 228, 228);
+	transition: all ease 0.2sda;
+}
+#vt {
+    padding-top: 59px;
+    margin-top: -59px;
+}
+#galeri-id{
+	padding-top: 46px;
+    margin-top: -46px;
+}
+#client-id{
+	padding-top: 100px;
+    margin-top: -100px;
+}
+#maps-navigo{
+	margin-left: -15px;
+}
+/* BORDER TEAM -------------------------------- */
+.borderteam{
+  margin: 2px auto 20px;
+  width: 50px;
+  margin-bottom: 20px;
+  border: 2px solid #313131;
+}
+
+/* footerr */
+.social-icons{
+  transform: translateY(-10px);
+}
+
+a {
+	color: #fff
+  }
+  
+  a:hover {
+	color: #fff
+  }
+  
+  .box {
+	margin-bottom: 60px;
+	margin-top: 20px
+  }
+  
+  .form-control {
+	border: none;
+	margin-left: 0;
+	background-color: #1565C0;
+	color: #fff
+  }
+  
+  input {
+	border-bottom: 1px solid #fff !important;
+	border-radius: 0 !important
+  }
+  
+  ::-webkit-input-placeholder {
+	color: #E1F5FE !important
+  }
+  
+  ::-moz-placeholder {
+	color: #E1F5FE !important
+  }
+  
+  :-ms-input-placeholder {
+	color: #E1F5FE !important
+  }
+  
+  :-moz-placeholder {
+	color: #E1F5FE !important
+  }
+  
+  .form-head {
+	padding-left: 10px;
+	padding-right: 12px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 22px
+  }
+  
+  .custom-control-label {
+	font-size: 14px !important
+  }
+  
+  .get-input {
+	padding-left: 0
+  }
+  
+  .btn .z {
+	color: #ffffff !important;
+	font-weight: bold !important;
+	padding: 10px 20px 10px 20px !important;
+	border-radius: 0 !important
+  }
+  
+  button:hover {
+	color: #1565C0 !important;
+	background-color: #fff
+  }
+  
+
+
+/* 
+===============================================
+            	Media Queries
+===============================================
+*/
+@media screen and (max-width: 800px) {
+	.columnz {
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.columnz {
+	  flex: 100%;
+	  max-width: 100%;
+	}
+	.columnz img {
+	  filter: grayscale(0) brightness(1);
+	}
+  }
